@@ -1,0 +1,52 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::test-compress-input",
+                "arn:aws:s3:::test-compress-input/*",
+                "arn:aws:s3:::test-compress-output",
+                "arn:aws:s3:::test-compress-output/*",
+                "arn:aws:s3:::test-compress-temp",
+                "arn:aws:s3:::test-compress-temp/*"
+            ]
+        },
+        {
+            "Sid": "Statement2",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:*"
+            ],
+            "Resource": [
+                "arn:aws:lambda:us-east-1:IDACCOUNT:function:NAME_FUNCTION"
+            ]
+        },
+        {
+            "Sid": "Statement3",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Statement4",
+            "Effect": "Allow",
+            "Action": [
+                "sqs:*"
+            ],
+            "Resource": [
+                "arn:aws:sqs:us-east-1:IDACCOUNT:QUEUE_NAME"
+            ]
+        }
+    ]
+}
