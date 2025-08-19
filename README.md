@@ -64,6 +64,6 @@ Exemplo de um resultado da compressão:
 Original (10mb)
 ![Imagem Original](assets/imagem-10mb.jpg)
 
-Comprimida (1mb) Imagem tamanho comprimido
+Comprimida (1mb)
 ![Imagem Comprimida](assets/imagem-1mb.jpg)
 Designed by Freepik
